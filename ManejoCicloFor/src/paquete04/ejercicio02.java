@@ -12,10 +12,13 @@ public class ejercicio02 {
 
     public static void main(String[] args) {
         
-        for (int num = 30; num >= 10; num--) {
-               System.out.println(num +"-"+ num*2+"-"+ num*3+"-"+ num*4);
-        }
-
+        int contador=0;
+        for(double gradosF = 20;contador < 21; gradosF+=4 ){
+            double operacion = 5.0/9*(gradosF-32);
+            String cadena = String.format("%.2f", operacion);
+            System.out.println("Operacion"+"("+contador+")"+ "Fahrenheit: " + gradosF
+            + "===>" + "Celcius:" + cadena );
+            contador++;
     }
-
+}
 }
